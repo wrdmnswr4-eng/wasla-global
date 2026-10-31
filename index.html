@@ -4,45 +4,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="وصلة العالمية لربط الشركات بالعملاء والشركاء حول العالم">
-<title>وصلة العالمية | WASLA GLOBAL</title>
+<meta name="description" content="WASLA GLOBAL - نربط الشركات والعملاء والشركاء بالفرص التجارية حول العالم.">
+<meta name="theme-color" content="#10213e">
+<title>WASLA GLOBAL | وصلة العالمية</title>
+
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#17243b;line-height:1.8}
-header{background:#101d35;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
-.logo{font-size:24px;font-weight:bold;color:#e9b95c}
-nav{display:flex;flex-wrap:wrap;gap:12px}
+body{
+ margin:0;font-family:Arial,sans-serif;
+ background:#f5f7fa;color:#17243b;line-height:1.8
+}
+header{
+ background:#101d35;color:white;padding:15px 6%;
+ display:flex;justify-content:space-between;align-items:center;
+ flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:1000
+}
+.logo{font-size:23px;font-weight:bold;color:#e9b95c}
+nav{display:flex;flex-wrap:wrap;gap:14px}
 nav a{color:white;text-decoration:none;font-size:14px}
-.hero{background:linear-gradient(120deg,#10213e,#175276);color:white;text-align:center;padding:85px 20px}
-.hero h1{font-size:43px;margin:0 0 10px}
-.hero p{font-size:19px;color:#e1e9f2}
-.btn{display:inline-block;background:#e9b95c;color:#14213a;padding:12px 25px;border-radius:7px;text-decoration:none;font-weight:bold;margin:10px 5px;border:0;cursor:pointer}
+nav a:hover{color:#e9b95c}
+.hero{
+ background:linear-gradient(120deg,#10213e,#175276);
+ color:white;text-align:center;padding:85px 20px
+}
+.hero h1{font-size:44px;margin:0 0 10px}
+.hero p{font-size:18px;color:#e1e9f2}
+.btn{
+ display:inline-block;background:#e9b95c;color:#14213a;
+ padding:12px 25px;border-radius:7px;text-decoration:none;
+ font-weight:bold;margin:8px 5px;border:0;cursor:pointer
+}
 .btn.white{background:white}
+.btn:hover{opacity:.9}
 section{padding:60px 7%;text-align:center}
-h2{font-size:30px;color:#142b49;margin-bottom:10px}
+h2{font-size:29px;color:#142b49;margin-bottom:10px}
 .sub{color:#68758a;margin-bottom:30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
-.card{background:white;padding:27px 20px;border-radius:12px;box-shadow:0 4px 18px #152b4810}
+.grid{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;margin-top:30px
+}
+.card{
+ background:white;padding:25px 20px;border-radius:12px;
+ box-shadow:0 4px 18px #152b4810
+}
 .card h3{color:#174b70;margin:8px 0}
 .card p{color:#68758a}
-.icon{font-size:36px}
+.icon{font-size:35px}
 .dark{background:#10213e;color:white}
 .dark h2{color:#e9b95c}
 .dark p{color:#e0e7ef}
 .steps{max-width:850px;margin:auto;text-align:right}
-.steps div{background:white;color:#17243b;margin:12px 0;padding:17px;border-radius:8px}
-form{max-width:600px;margin:25px auto;background:white;padding:25px;border-radius:12px;text-align:right;box-shadow:0 4px 18px #152b4810}
+.steps div{
+ background:white;color:#17243b;margin:12px 0;
+ padding:17px;border-radius:8px
+}
+form{
+ max-width:650px;margin:25px auto;background:white;
+ padding:25px;border-radius:12px;text-align:right;
+ box-shadow:0 4px 18px #152b4810
+}
 label{display:block;font-weight:bold;margin-top:10px}
-input,select,textarea{width:100%;padding:13px;margin:7px 0 12px;border:1px solid #dce2eb;border-radius:6px;font-size:15px;font-family:Arial}
-textarea{min-height:100px}
+input,select,textarea{
+ width:100%;padding:13px;margin:7px 0 12px;
+ border:1px solid #dce2eb;border-radius:6px;
+ font-size:15px;font-family:Arial;background:white
+}
+textarea{min-height:110px;resize:vertical}
 form button{width:100%;font-size:16px}
-.notice{max-width:600px;margin:10px auto;color:#68758a;font-size:13px}
+.notice{max-width:650px;margin:10px auto;color:#68758a;font-size:13px}
+.contact-links a{color:#174b70}
 footer{background:#0c182b;color:white;text-align:center;padding:30px}
 footer a{color:#e9b95c;text-decoration:none}
-@media(max-width:600px){header{justify-content:center;gap:12px}.hero h1{font-size:32px}nav{justify-content:center}section{padding:45px 5%}}
+.whatsapp-button{
+ position:fixed;bottom:20px;left:20px;background:#25D366;
+ color:white;padding:13px 19px;border-radius:50px;
+ text-decoration:none;font-weight:bold;z-index:9999;
+ box-shadow:0 4px 12px #0003
+}
+.policy{max-width:850px;margin:auto;text-align:right}
+.policy p{color:#68758a}
+@media(max-width:650px){
+ header{justify-content:center}
+ .hero h1{font-size:32px}
+ nav{justify-content:center}
+ section{padding:45px 5%}
+}
 </style>
 </head>
+
 <body>
 
 <header>
@@ -51,8 +101,9 @@ footer a{color:#e9b95c;text-decoration:none}
 <a href="#home">الرئيسية</a>
 <a href="#about">من نحن</a>
 <a href="#services">خدماتنا</a>
-<a href="#work">كيف نعمل</a>
-<a href="#join">انضم إلينا</a>
+<a href="#work">آلية العمل</a>
+<a href="#partners">الشركاء</a>
+<a href="#request">قدّم طلبك</a>
 <a href="#contact">اتصل بنا</a>
 </nav>
 </header>
@@ -60,140 +111,249 @@ footer a{color:#e9b95c;text-decoration:none}
 <div class="hero" id="home">
 <h1>وصلة العالمية</h1>
 <p>نربط الأعمال بالفرص حول العالم</p>
-<p>تسويق ذكي. علاقات عالمية. فرص حقيقية.</p>
-<a class="btn" href="#join">انضم كشريك</a>
-<a class="btn white" href="#contact">اطلب خدماتنا</a>
+<p>تسويق ذكي. علاقات عالمية. فرص تجارية.</p>
+<a class="btn" href="#request">ابدأ التعاون معنا</a>
+<a class="btn white" href="#services">اكتشف خدماتنا</a>
 </div>
 
 <section id="about">
 <h2>من نحن</h2>
-<p class="sub">وصلة العالمية منصة لربط الشركات والعملاء والمسوقين والشركاء التجاريين في الأسواق الدولية.</p>
+<p class="sub">
+WASLA GLOBAL شبكة أعمال وتسويق ووساطة تجارية،
+تهدف إلى ربط الشركات والعملاء والشركاء بالفرص المناسبة
+في الأسواق المحلية والدولية.
+</p>
 <div class="grid">
-<div class="card"><div class="icon">🌍</div><h3>رؤيتنا</h3><p>بناء شبكة عالمية من الفرص والعلاقات التجارية.</p></div>
-<div class="card"><div class="icon">🤝</div><h3>رسالتنا</h3><p>تسهيل التواصل بين أصحاب الأعمال والعملاء المناسبين.</p></div>
-<div class="card"><div class="icon">⭐</div><h3>قيمنا</h3><p>الشفافية والمصداقية والثقة والالتزام.</p></div>
+<div class="card">
+<div class="icon">🌍</div>
+<h3>رؤيتنا</h3>
+<p>بناء شبكة عالمية تربط أصحاب الأعمال بالفرص والأسواق.</p>
+</div>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>رسالتنا</h3>
+<p>تسهيل التواصل والتعاون بين الشركات والعملاء والشركاء.</p>
+</div>
+<div class="card">
+<div class="icon">⭐</div>
+<h3>قيمنا</h3>
+<p>الشفافية والمصداقية والالتزام وبناء علاقات طويلة الأمد.</p>
+</div>
 </div>
 </section>
 
 <section id="services">
 <h2>خدماتنا</h2>
-<p class="sub">نساعد الشركات على توسيع أعمالها والوصول إلى فرص جديدة.</p>
+<p class="sub">نساعدك على الوصول إلى العملاء والفرص التجارية المناسبة.</p>
 <div class="grid">
-<div class="card"><div class="icon">📢</div><h3>التسويق الرقمي</h3><p>الترويج للمنتجات والخدمات والوصول إلى العملاء المحتملين.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>وساطة الأعمال</h3><p>ربط الشركات وأصحاب الأعمال بالعملاء والشركاء.</p></div>
-<div class="card"><div class="icon">🎯</div><h3>جلب العملاء</h3><p>البحث عن عملاء جدد وتوفير فرص تجارية للشركات.</p></div>
-<div class="card"><div class="icon">🚗</div><h3>السيارات والعقارات</h3><p>ربط البائعين والمشترين والمهتمين بالفرص المتاحة.</p></div>
-<div class="card"><div class="icon">🛍️</div><h3>التجارة والخدمات</h3><p>تسهيل الوصول إلى المنتجات والخدمات والأسواق.</p></div>
-<div class="card"><div class="icon">🌐</div><h3>الشراكات العالمية</h3><p>بناء علاقات تجارية بين الشركات في مختلف الدول.</p></div>
+<div class="card">
+<div class="icon">📢</div>
+<h3>التسويق الرقمي</h3>
+<p>الترويج للمنتجات والخدمات والوصول إلى العملاء المحتملين.</p>
+</div>
+<div class="card">
+<div class="icon">🏢</div>
+<h3>وساطة الأعمال</h3>
+<p>ربط الشركات وأصحاب الأعمال بالعملاء والشركاء المناسبين.</p>
+</div>
+<div class="card">
+<div class="icon">🎯</div>
+<h3>جلب العملاء</h3>
+<p>البحث عن عملاء وفرص جديدة للشركات ومقدمي الخدمات.</p>
+</div>
+<div class="card">
+<div class="icon">🚗</div>
+<h3>السيارات والعقارات</h3>
+<p>ربط المهتمين بالبائعين ومقدمي العروض والفرص المتاحة.</p>
+</div>
+<div class="card">
+<div class="icon">🛍️</div>
+<h3>التجارة والخدمات</h3>
+<p>تسهيل التواصل التجاري بين الموردين والعملاء.</p>
+</div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>الشراكات العالمية</h3>
+<p>فتح قنوات تعاون بين الشركات في مختلف الدول.</p>
+</div>
 </div>
 </section>
 
 <section class="dark" id="work">
 <h2>كيف نعمل؟</h2>
-<p>نموذج عمل قائم على التعاون والعمولات المتفق عليها مسبقاً.</p>
+<p>نعتمد على التعاون والاتفاق الواضح قبل بدء أي عمل.</p>
 <div class="steps">
-<div><strong>1. الاتفاق:</strong> نتفق مع الشركة على الخدمة والسعر والعمولة كتابةً.</div>
-<div><strong>2. التسويق:</strong> نبحث عن العملاء المهتمين ونسوّق للخدمة.</div>
-<div><strong>3. الربط:</strong> نصل العميل بالشركة ونساعد في إتمام الاتفاق.</div>
-<div><strong>4. العمولة:</strong> نستحق عمولتنا بعد إتمام الصفقة وفق الاتفاق.</div>
+<div><strong>1. استقبال الطلب:</strong> نتعرف على احتياجات الشركة أو العميل.</div>
+<div><strong>2. الاتفاق:</strong> نحدد الخدمة والسعر والعمولة كتابةً قبل التنفيذ.</div>
+<div><strong>3. البحث والتسويق:</strong> نبحث عن العملاء أو الشركاء المناسبين.</div>
+<div><strong>4. الربط:</strong> نربط الأطراف ونتابع التواصل لإتمام الاتفاق.</div>
+<div><strong>5. العمولة:</strong> تُدفع العمولة وفق الشروط المتفق عليها وبعد تحقق الاستحقاق.</div>
 </div>
 </section>
 
-<section id="join">
-<h2>انضم إلى شبكة وصلة العالمية</h2>
-<p class="sub">سواء كنت صاحب شركة أو مسوقاً أو شريكاً تجارياً، نرحب بتعاونك.</p>
+<section id="partners">
+<h2>انضم إلى شبكة شركائنا</h2>
+<p class="sub">نرحب بالتعاون مع الأفراد والشركات وأصحاب الخدمات.</p>
 <div class="grid">
-<div class="card"><div class="icon">🏢</div><h3>أصحاب الشركات</h3><p>اعرض خدماتك وابحث عن عملاء وأسواق جديدة.</p></div>
-<div class="card"><div class="icon">👨‍💼</div><h3>المسوقون</h3><p>انضم إلى شبكة الشركاء واعمل على جلب العملاء مقابل عمولات متفق عليها.</p></div>
-<div class="card"><div class="icon">🤝</div><h3>الشركاء</h3><p>شاركنا فرص الأعمال وابنِ علاقات تجارية جديدة.</p></div>
+<div class="card">
+<div class="icon">🏢</div>
+<h3>أصحاب الشركات</h3>
+<p>اعرضوا خدماتكم وابحثوا عن عملاء وأسواق جديدة.</p>
+</div>
+<div class="card">
+<div class="icon">👨‍💼</div>
+<h3>المسوقون</h3>
+<p>ساهموا في جلب العملاء مقابل عمولات متفق عليها مسبقاً.</p>
+</div>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>الشركاء التجاريون</h3>
+<p>شاركوا فرص الأعمال وابنوا علاقات تعاون جديدة.</p>
+</div>
+</div>
+<a class="btn" href="#request">سجّل اهتمامك الآن</a>
+</section>
+
+<section id="request">
+<h2>نموذج طلبات العملاء والشركاء</h2>
+<p class="sub">
+أرسل لنا معلوماتك وطلبك، وسنتواصل معك لمناقشة فرص التعاون.
+</p>
+
+<form id="requestForm">
+
+<label for="name">الاسم الكامل *</label>
+<input id="name" required maxlength="100" placeholder="اكتب اسمك الكامل">
+
+<label for="company">اسم الشركة (إن وجد)</label>
+<input id="company" maxlength="120" placeholder="اسم الشركة أو المؤسسة">
+
+<label for="email">البريد الإلكتروني *</label>
+<input id="email" type="email" required maxlength="150" placeholder="example@email.com">
+
+<label for="phone">رقم واتساب للتواصل *</label>
+<input id="phone" type="tel" required maxlength="30" placeholder="مع مفتاح الدولة">
+
+<label for="country">الدولة *</label>
+<input id="country" required maxlength="80" placeholder="بلد الإقامة أو العمل">
+
+<label for="type">نوع الطلب *</label>
+<select id="type" required>
+<option value="">اختر نوع الطلب</option>
+<option>أرغب في تسويق منتج أو خدمة</option>
+<option>أبحث عن عملاء لشركتي</option>
+<option>أرغب في الانضمام كمسوق</option>
+<option>أرغب في الانضمام كشريك تجاري</option>
+<option>لدي فرصة وساطة أو صفقة تجارية</option>
+<option>أبحث عن منتج أو خدمة</option>
+<option>استفسار عام</option>
+</select>
+
+<label for="field">مجال العمل أو الخدمة</label>
+<input id="field" maxlength="150" placeholder="مثلاً: عقارات، سيارات، تجارة، تسويق">
+
+<label for="details">تفاصيل الطلب *</label>
+<textarea id="details" required maxlength="2000" placeholder="اشرح لنا طلبك أو الفرصة التي تريد التعاون بشأنها"></textarea>
+
+<button class="btn" type="submit">إرسال الطلب عبر واتساب</button>
+</form>
+
+<p class="notice">
+عند الضغط على الإرسال، سيتم فتح واتساب برسالة جاهزة تحتوي على معلومات طلبك.
+لن يتم إرسال الرسالة إلا بعد مراجعتها والضغط على زر الإرسال داخل واتساب.
+</p>
+</section>
+
+<section id="terms">
+<h2>شروط التعاون والعمولات</h2>
+<div class="policy">
+<p>1. يتم تحديد طبيعة الخدمة ونطاق العمل قبل بدء أي تعاون.</p>
+<p>2. يتم الاتفاق كتابةً على السعر والعمولة وطريقة الدفع وموعد الاستحقاق.</p>
+<p>3. لا تُضمن أي مبيعات أو أرباح أو نتائج تجارية.</p>
+<p>4. لا تستحق أي عمولة إلا وفق الشروط التي وافق عليها الأطراف مسبقاً.</p>
+<p>5. يجب على جميع الأطراف تقديم معلومات صحيحة والالتزام بالقوانين المعمول بها.</p>
+<p>6. لا تمثل WASLA GLOBAL أي طرف قانونياً أو مالياً إلا بموجب تفويض واتفاق واضح.</p>
 </div>
 </section>
 
-<section id="register">
-<h2>طلب الانضمام</h2>
-<p class="sub">املأ المعلومات التالية للتعبير عن اهتمامك بالتعاون معنا.</p>
-<form id="joinForm">
-<label>الاسم الكامل</label>
-<input id="name" required placeholder="اكتب اسمك">
-<label>البريد الإلكتروني</label>
-<input id="email" type="email" required placeholder="example@email.com">
-<label>الدولة</label>
-<input id="country" required placeholder="بلد الإقامة">
-<label>نوع العضوية</label>
-<select id="type" required>
-<option value="">اختر نوع العضوية</option>
-<option>صاحب شركة</option>
-<option>مسوق</option>
-<option>شريك تجاري</option>
-<option>عميل</option>
-</select>
-<label>مجال العمل أو الخدمة</label>
-<input id="field" placeholder="مثلاً: عقارات، سيارات، تسويق">
-<label>تفاصيل إضافية</label>
-<textarea id="details" placeholder="اكتب نبذة عن طلبك"></textarea>
-<button class="btn" type="submit">إرسال طلب الانضمام</button>
-</form>
-<p class="notice">عند الإرسال سيتم فتح تطبيق البريد لإرسال طلبك إلى فريق وصلة العالمية. يجب أن يكون لدى المرسل تطبيق بريد مُعدّ على جهازه.</p>
+<section id="privacy">
+<h2>الخصوصية</h2>
+<div class="policy">
+<p>
+تُستخدم المعلومات التي تدخلها في نموذج التواصل لغرض الرد على استفسارك
+ومناقشة فرص التعاون. عند الإرسال عبر واتساب، تنتقل المعلومات إلى تطبيق
+واتساب وفق إعداداتك وسياسة الخصوصية الخاصة به.
+</p>
+<p>
+لا تدخل كلمات مرور أو بيانات بطاقات بنكية أو معلومات شخصية شديدة الحساسية
+في نموذج التواصل.
+</p>
+</div>
 </section>
 
 <section id="contact">
 <h2>تواصل معنا</h2>
-<p class="sub">هل لديك شركة أو فرصة تجارية؟ يسعدنا التواصل معك.</p>
-<div class="card">
+<p class="sub">يسعدنا استقبال استفساراتكم وفرص التعاون.</p>
+<div class="card contact-links">
 <h3>WASLA GLOBAL</h3>
 <p>International Business & Marketing Network</p>
-<p>البريد الإلكتروني: <a href="mailto:Wrdmnswr4@gmail.com">Wrdmnswr4@gmail.com</a></p>
-<p><a class="btn" href="mailto:Wrdmnswr4@gmail.com">راسلنا الآن</a></p>
+<p>البريد الإلكتروني:
+<a href="mailto:Wrdmnswr4@gmail.com">Wrdmnswr4@gmail.com</a></p>
+<a class="btn" href="https://wa.me/972568311495" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+<a class="btn white" href="mailto:Wrdmnswr4@gmail.com">راسلنا بالبريد الإلكتروني</a>
 </div>
 </section>
 
 <footer>
 <h3>WASLA GLOBAL | وصلة العالمية</h3>
 <p>نربط الأعمال بالفرص حول العالم.</p>
-<p>© 2026 وصلة العالمية. جميع الحقوق محفوظة.</p>
+<p>
+<a href="#terms">شروط التعاون</a> |
+<a href="#privacy">الخصوصية</a> |
+<a href="#contact">اتصل بنا</a>
+</p>
+<p>© 2026 WASLA GLOBAL. جميع الحقوق محفوظة.</p>
 </footer>
 
+<a class="whatsapp-button"
+href="https://wa.me/972568311495"
+target="_blank" rel="noopener"
+aria-label="تواصل معنا عبر واتساب">
+💬 تواصل معنا
+</a>
+
 <script>
-document.getElementById("joinForm").addEventListener("submit",function(e){
-e.preventDefault();
-const name=document.getElementById("name").value;
-const email=document.getElementById("email").value;
-const country=document.getElementById("country").value;
-const type=document.getElementById("type").value;
-const field=document.getElementById("field").value;
-const details=document.getElementById("details").value;
-const subject=encodeURIComponent("طلب انضمام جديد - WASLA GLOBAL");
-const body=encodeURIComponent(
-"الاسم: "+name+
-"\nالبريد: "+email+
-"\nالدولة: "+country+
-"\nنوع العضوية: "+type+
-"\nمجال العمل: "+field+
-"\nالتفاصيل: "+details
-);
-window.location.href="mailto:Wrdmnswr4@gmail.com?subject="+subject+"&body="+body;
+const form = document.getElementById("requestForm");
+
+form.addEventListener("submit", function(event) {
+ event.preventDefault();
+
+ const name = document.getElementById("name").value.trim();
+ const company = document.getElementById("company").value.trim();
+ const email = document.getElementById("email").value.trim();
+ const phone = document.getElementById("phone").value.trim();
+ const country = document.getElementById("country").value.trim();
+ const type = document.getElementById("type").value;
+ const field = document.getElementById("field").value.trim();
+ const details = document.getElementById("details").value.trim();
+
+ const message =
+ "طلب جديد - WASLA GLOBAL\n\n" +
+ "الاسم: " + name + "\n" +
+ "الشركة: " + (company || "غير محدد") + "\n" +
+ "البريد الإلكتروني: " + email + "\n" +
+ "رقم واتساب: " + phone + "\n" +
+ "الدولة: " + country + "\n" +
+ "نوع الطلب: " + type + "\n" +
+ "مجال العمل: " + (field || "غير محدد") + "\n" +
+ "التفاصيل: " + details;
+
+ const whatsappURL =
+ "https://wa.me/972568311495?text=" + encodeURIComponent(message);
+
+ window.open(whatsappURL, "_blank");
 });
 </script>
 
-</body><a href="https://wa.me/972568311495"
-   target="_blank"
-   class="whatsapp-button">
-   تواصل معنا عبر واتساب
-</a>
-
-<style>
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background: #25D366;
-  color: white;
-  padding: 15px 22px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  z-index: 9999;
-  box-shadow: 0 4px 12px rgba(0,0,0,.2);
-}
-</style>
+</body>
 </html>
