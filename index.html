@@ -1,386 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="google-site-verification" content="0RC_VZhU0dHYheZV7_GY-lg53LqG95keU8e-Uv9fgRA">
+
+<meta name="google-site-verification" content="0RC_VZhU0dHYheZV7_GY-lg53LqG95keU8e-Uv9fgRA" />
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="WASLA GLOBAL شبكة تسويق ووساطة أعمال دولية. نربط الشركات والعملاء والشركاء بالفرص التجارية حول العالم.">
-<meta name="theme-color" content="#101d35">
-<meta property="og:title" content="WASLA GLOBAL | وصلة العالمية">
-<meta property="og:description" content="تسويق ذكي. علاقات عالمية. فرص تجارية.">
-<meta property="og:type" content="website">
+<meta name="description" content="WASLA GLOBAL - نربط الشركات والعملاء والشركاء بالفرص التجارية حول العالم.">
+<meta name="theme-color" content="#10213e">
 <title>WASLA GLOBAL | وصلة العالمية</title>
 
 <style>
-:root{
- --navy:#101d35;
- --navy2:#173653;
- --gold:#e9c477;
- --gold2:#c9a45c;
- --text:#17243b;
- --muted:#68758a;
- --light:#f5f7fa;
- --white:#fff;
-}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth}
 body{
- margin:0;
- font-family:Arial,sans-serif;
- background:var(--light);
- color:var(--text);
- line-height:1.8;
+ margin:0;font-family:Arial,sans-serif;
+ background:#f5f7fa;color:#17243b;line-height:1.8
 }
-a{transition:.25s}
 header{
- background:var(--navy);
- color:white;
- padding:13px 6%;
- display:flex;
- justify-content:space-between;
- align-items:center;
- flex-wrap:wrap;
- gap:12px;
- position:sticky;
- top:0;
- z-index:1000;
- box-shadow:0 3px 15px #0002;
+ background:#101d35;color:white;padding:15px 6%;
+ display:flex;justify-content:space-between;align-items:center;
+ flex-wrap:wrap;gap:12px;position:sticky;top:0;z-index:1000
 }
-.logo{
- font-size:23px;
- font-weight:bold;
- color:var(--gold);
- letter-spacing:.5px;
-}
-nav{display:flex;flex-wrap:wrap;gap:13px}
-nav a{
- color:white;
- text-decoration:none;
- font-size:13px;
-}
-nav a:hover{color:var(--gold)}
+.logo{font-size:23px;font-weight:bold;color:#e9b95c}
+nav{display:flex;flex-wrap:wrap;gap:14px}
+nav a{color:white;text-decoration:none;font-size:14px}
+nav a:hover{color:#e9b95c}
 .hero{
- background:
- radial-gradient(circle at 15% 20%,#ffffff12,transparent 30%),
- linear-gradient(125deg,#101d35,#175276);
- color:white;
- text-align:center;
- padding:100px 20px 90px;
+ background:linear-gradient(120deg,#10213e,#175276);
+ color:white;text-align:center;padding:85px 20px
 }
-.hero-label{
- display:inline-block;
- color:var(--gold);
- border:1px solid #e9c47770;
- padding:5px 17px;
- border-radius:30px;
- font-size:13px;
- margin-bottom:15px;
-}
-.hero h1{
- font-size:48px;
- margin:0 0 10px;
- color:white;
-}
-.hero p{
- font-size:18px;
- color:#e1e9f2;
- max-width:720px;
- margin:10px auto;
-}
-.hero .hero-sub{
- color:var(--gold);
- font-weight:bold;
- font-size:17px;
-}
+.hero h1{font-size:44px;margin:0 0 10px}
+.hero p{font-size:18px;color:#e1e9f2}
 .btn{
- display:inline-block;
- background:var(--gold);
- color:#14213a;
- padding:12px 25px;
- border-radius:7px;
- text-decoration:none;
- font-weight:bold;
- margin:8px 5px;
- border:0;
- cursor:pointer;
- font-family:Arial,sans-serif;
+ display:inline-block;background:#e9b95c;color:#14213a;
+ padding:12px 25px;border-radius:7px;text-decoration:none;
+ font-weight:bold;margin:8px 5px;border:0;cursor:pointer
 }
-.btn.white{background:white;color:var(--navy)}
-.btn.outline{
- background:transparent;
- color:white;
- border:1px solid #ffffff80;
-}
-.btn:hover{transform:translateY(-2px);opacity:.93}
-section{
- padding:65px 7%;
- text-align:center;
-}
-h2{
- font-size:30px;
- color:#142b49;
- margin:0 0 10px;
-}
-.sub{
- color:var(--muted);
- margin:0 auto 30px;
- max-width:800px;
-}
-.section-label{
- color:#b38a3f;
- font-size:12px;
- font-weight:bold;
- letter-spacing:2px;
-}
+.btn.white{background:white}
+.btn:hover{opacity:.9}
+section{padding:60px 7%;text-align:center}
+h2{font-size:29px;color:#142b49;margin-bottom:10px}
+.sub{color:#68758a;margin-bottom:30px}
 .grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:20px;
- margin-top:30px;
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:20px;margin-top:30px
 }
 .card{
- background:white;
- padding:26px 20px;
- border-radius:13px;
- box-shadow:0 4px 20px #152b4810;
- border:1px solid #e9edf3;
- transition:.25s;
-}
-.card:hover{
- transform:translateY(-4px);
- box-shadow:0 10px 25px #152b4818;
+ background:white;padding:25px 20px;border-radius:12px;
+ box-shadow:0 4px 18px #152b4810
 }
 .card h3{color:#174b70;margin:8px 0}
-.card p{color:var(--muted);margin:5px 0}
+.card p{color:#68758a}
 .icon{font-size:35px}
-.dark{
- background:var(--navy);
- color:white;
-}
-.dark h2{color:var(--gold)}
+.dark{background:#10213e;color:white}
+.dark h2{color:#e9b95c}
 .dark p{color:#e0e7ef}
-.why-section{background:#fff}
-.why-section .card{box-shadow:none}
-.why-section .icon{font-size:30px}
-.steps{
- max-width:850px;
- margin:auto;
- text-align:right;
-}
+.steps{max-width:850px;margin:auto;text-align:right}
 .steps div{
- background:white;
- color:var(--text);
- margin:12px 0;
- padding:17px 20px;
- border-radius:8px;
- border-right:4px solid var(--gold2);
- box-shadow:0 3px 12px #0001;
-}
-.tekce-premium{
- padding:70px 20px;
- background:#101d35;
- text-align:center;
-}
-.tekce-premium-box{
- max-width:900px;
- margin:auto;
- padding:45px 25px;
- border:1px solid var(--gold2);
- border-radius:20px;
- background:linear-gradient(140deg,#1b3455,#10213e 65%,#263d59);
- color:white;
- box-shadow:0 15px 45px #0004;
-}
-.tekce-premium-label{
- color:var(--gold);
- letter-spacing:2px;
- font-weight:bold;
- font-size:13px;
-}
-.tekce-premium h2{
- color:white;
- font-size:32px;
- margin:15px 0;
-}
-.tekce-premium h3{
- color:var(--gold);
- font-size:22px;
-}
-.tekce-premium p{
- color:#e1e8f0;
- max-width:650px;
- margin:12px auto;
-}
-.tekce-premium-features{
- display:flex;
- justify-content:center;
- flex-wrap:wrap;
- gap:12px;
- margin:25px 0;
-}
-.tekce-premium-features span{
- border:1px solid #ffffff35;
- border-radius:30px;
- padding:9px 15px;
- color:white;
- font-size:14px;
-}
-.tekce-premium-button{
- display:inline-block;
- margin-top:20px;
- padding:15px 32px;
- border-radius:8px;
- background:var(--gold);
- color:#10213e!important;
- font-weight:bold;
- text-decoration:none;
- transition:.25s;
-}
-.tekce-premium-button:hover{
- background:white;
- transform:translateY(-3px);
-}
-.tekce-premium-note{
- font-size:12px;
- opacity:.85;
- margin-top:20px!important;
-}
-.tekce-banner{
- width:300px;
- max-width:100%;
- min-height:250px;
- margin:25px auto;
- display:flex;
- justify-content:center;
- align-items:center;
- overflow:hidden;
- background:#ffffff08;
- border:1px solid #ffffff20;
- border-radius:10px;
-}
-.tekce-banner iframe,
-.tekce-banner img{
- max-width:100%;
-}
-.tekce-fallback{
- display:block;
- color:var(--gold);
- text-decoration:underline;
- margin:10px auto;
- font-size:13px;
-}
-.affiliate-disclosure{
- max-width:700px;
- margin:18px auto 0;
- padding:12px 15px;
- border:1px solid #ffffff35;
- border-radius:8px;
- font-size:12px;
- color:#e1e8f0;
-}
-.partner-note{
- max-width:850px;
- margin:25px auto 0;
- padding:18px;
- background:#fff8e8;
- border:1px solid #f0dfb8;
- border-radius:10px;
- color:#67542d;
+ background:white;color:#17243b;margin:12px 0;
+ padding:17px;border-radius:8px
 }
 form{
- max-width:680px;
- margin:25px auto;
- background:white;
- padding:28px;
- border-radius:13px;
- text-align:right;
- box-shadow:0 4px 20px #152b4810;
+ max-width:650px;margin:25px auto;background:white;
+ padding:25px;border-radius:12px;text-align:right;
+ box-shadow:0 4px 18px #152b4810
 }
-label{
- display:block;
- font-weight:bold;
- margin-top:10px;
- color:#263b55;
-}
+label{display:block;font-weight:bold;margin-top:10px}
 input,select,textarea{
- width:100%;
- padding:13px;
- margin:7px 0 12px;
- border:1px solid #dce2eb;
- border-radius:7px;
- font-size:15px;
- font-family:Arial,sans-serif;
- background:white;
- color:#17243b;
+ width:100%;padding:13px;margin:7px 0 12px;
+ border:1px solid #dce2eb;border-radius:6px;
+ font-size:15px;font-family:Arial;background:white
 }
-input:focus,select:focus,textarea:focus{
- outline:2px solid #e9c47780;
- border-color:var(--gold2);
-}
-textarea{min-height:120px;resize:vertical}
+textarea{min-height:110px;resize:vertical}
 form button{width:100%;font-size:16px}
-.notice{
- max-width:680px;
- margin:10px auto;
- color:var(--muted);
- font-size:13px;
-}
-.policy{
- max-width:850px;
- margin:auto;
- text-align:right;
-}
-.policy p{color:var(--muted)}
-.contact-links a:not(.btn){color:#174b70}
-.contact-card{
- max-width:700px;
- margin:auto;
-}
-.contact-card h3{color:#174b70}
-footer{
- background:#0c182b;
- color:white;
- text-align:center;
- padding:35px 15px;
-}
-footer a{color:var(--gold);text-decoration:none}
-footer a:hover{text-decoration:underline}
-.footer-links{
- display:flex;
- justify-content:center;
- flex-wrap:wrap;
- gap:15px;
-}
+.notice{max-width:650px;margin:10px auto;color:#68758a;font-size:13px}
+.contact-links a{color:#174b70}
+footer{background:#0c182b;color:white;text-align:center;padding:30px}
+footer a{color:#e9b95c;text-decoration:none}
 .whatsapp-button{
- position:fixed;
- bottom:20px;
- left:20px;
- background:#25D366;
- color:white;
- padding:13px 19px;
- border-radius:50px;
- text-decoration:none;
- font-weight:bold;
- z-index:9999;
- box-shadow:0 4px 12px #0003;
+ position:fixed;bottom:20px;left:20px;background:#25D366;
+ color:white;padding:13px 19px;border-radius:50px;
+ text-decoration:none;font-weight:bold;z-index:9999;
+ box-shadow:0 4px 12px #0003
 }
-.whatsapp-button:hover{transform:translateY(-3px)}
-@media(max-width:700px){
- header{justify-content:center;padding:12px 4%}
- .logo{width:100%;text-align:center}
- nav{justify-content:center;gap:10px}
- nav a{font-size:12px}
- .hero{padding:70px 18px}
- .hero h1{font-size:34px}
- .hero p{font-size:16px}
- section{padding:48px 5%}
- h2{font-size:25px}
- .tekce-premium{padding:45px 5%}
- .tekce-premium-box{padding:32px 17px}
- .tekce-premium h2{font-size:25px}
- form{padding:20px}
- .whatsapp-button{bottom:13px;left:12px;font-size:13px}
+.policy{max-width:850px;margin:auto;text-align:right}
+.policy p{color:#68758a}
+@media(max-width:650px){
+ header{justify-content:center}
+ .hero h1{font-size:32px}
+ nav{justify-content:center}
+ section{padding:45px 5%}
 }
 </style>
 </head>
@@ -388,325 +98,237 @@ footer a:hover{text-decoration:underline}
 <body>
 
 <header>
- <div class="logo">WASLA GLOBAL</div>
- <nav aria-label="القائمة الرئيسية">
-  <a href="#home">الرئيسية</a>
-  <a href="#about">من نحن</a>
-  <a href="#services">خدماتنا</a>
-  <a href="#tekce">العقارات</a>
-  <a href="#why">لماذا نحن؟</a>
-  <a href="#work">آلية العمل</a>
-  <a href="#partners">الشركاء</a>
-  <a href="#request">قدّم طلبك</a>
-  <a href="#contact">اتصل بنا</a>
- </nav>
+<div class="logo">WASLA GLOBAL</div>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#about">من نحن</a>
+<a href="#services">خدماتنا</a>
+<a href="#work">آلية العمل</a>
+<a href="#partners">الشركاء</a>
+<a href="#request">قدّم طلبك</a>
+<a href="#contact">اتصل بنا</a>
+</nav>
 </header>
 
-<main>
-
 <div class="hero" id="home">
- <div class="hero-label">INTERNATIONAL BUSINESS & MARKETING NETWORK</div>
- <h1>وصلة العالمية</h1>
- <p>نربط الأعمال بالفرص حول العالم</p>
- <p class="hero-sub">تسويق ذكي. علاقات عالمية. فرص تجارية.</p>
- <p>نساعد الشركات ومقدمي الخدمات وأصحاب الأعمال على الوصول إلى العملاء والشركاء والفرص المناسبة.</p>
- <a class="btn" href="#request">ابدأ التعاون معنا</a>
- <a class="btn outline" href="#services">اكتشف خدماتنا</a>
+<h1>وصلة العالمية</h1>
+<p>نربط الأعمال بالفرص حول العالم</p>
+<p>تسويق ذكي. علاقات عالمية. فرص تجارية.</p>
+<a class="btn" href="#request">ابدأ التعاون معنا</a>
+<a class="btn white" href="#services">اكتشف خدماتنا</a>
 </div>
 
 <section id="about">
- <div class="section-label">ABOUT WASLA GLOBAL</div>
- <h2>من نحن</h2>
- <p class="sub">
-  WASLA GLOBAL شبكة أعمال وتسويق ووساطة تجارية، تهدف إلى ربط الشركات والعملاء والشركاء بالفرص المناسبة في الأسواق المحلية والدولية.
- </p>
- <div class="grid">
-  <div class="card">
-   <div class="icon">🌍</div>
-   <h3>رؤيتنا</h3>
-   <p>بناء شبكة عالمية تربط أصحاب الأعمال بالفرص والأسواق.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🤝</div>
-   <h3>رسالتنا</h3>
-   <p>تسهيل التواصل والتعاون بين الشركات والعملاء والشركاء.</p>
-  </div>
-  <div class="card">
-   <div class="icon">⭐</div>
-   <h3>قيمنا</h3>
-   <p>الشفافية والمصداقية والالتزام وبناء علاقات طويلة الأمد.</p>
-  </div>
- </div>
+<h2>من نحن</h2>
+<p class="sub">
+WASLA GLOBAL شبكة أعمال وتسويق ووساطة تجارية،
+تهدف إلى ربط الشركات والعملاء والشركاء بالفرص المناسبة
+في الأسواق المحلية والدولية.
+</p>
+<div class="grid">
+<div class="card">
+<div class="icon">🌍</div>
+<h3>رؤيتنا</h3>
+<p>بناء شبكة عالمية تربط أصحاب الأعمال بالفرص والأسواق.</p>
+</div>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>رسالتنا</h3>
+<p>تسهيل التواصل والتعاون بين الشركات والعملاء والشركاء.</p>
+</div>
+<div class="card">
+<div class="icon">⭐</div>
+<h3>قيمنا</h3>
+<p>الشفافية والمصداقية والالتزام وبناء علاقات طويلة الأمد.</p>
+</div>
+</div>
 </section>
 
 <section id="services">
- <div class="section-label">OUR SERVICES</div>
- <h2>خدماتنا</h2>
- <p class="sub">نساعدك على الوصول إلى العملاء والفرص التجارية المناسبة.</p>
- <div class="grid">
-  <div class="card">
-   <div class="icon">📢</div>
-   <h3>التسويق الرقمي</h3>
-   <p>الترويج للمنتجات والخدمات والوصول إلى العملاء المحتملين.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🏢</div>
-   <h3>وساطة الأعمال</h3>
-   <p>ربط الشركات وأصحاب الأعمال بالعملاء والشركاء المناسبين.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🎯</div>
-   <h3>جلب العملاء</h3>
-   <p>البحث عن عملاء وفرص جديدة للشركات ومقدمي الخدمات.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🚗</div>
-   <h3>السيارات والعقارات</h3>
-   <p>ربط المهتمين بالبائعين ومقدمي العروض والفرص المتاحة.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🛍️</div>
-   <h3>التجارة والخدمات</h3>
-   <p>تسهيل التواصل التجاري بين الموردين والعملاء.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🌐</div>
-   <h3>الشراكات العالمية</h3>
-   <p>فتح قنوات تعاون بين الشركات في مختلف الدول.</p>
-  </div>
- </div>
-</section>
-
-<!-- TEKCE PARTNERSHIP -->
-<section class="tekce-premium" id="tekce">
- <div class="tekce-premium-box">
-  <div class="tekce-premium-label">GLOBAL REAL ESTATE OPPORTUNITIES</div>
-  <h2>اكتشف فرص العقارات حول العالم</h2>
-  <h3>TEKCE × WASLA GLOBAL</h3>
-  <p>
-   نربطك بفرص عقارية في الأسواق العالمية بالتعاون مع TEKCE.
-   اكتشف العقارات المتاحة وتواصل مع فريق TEKCE للحصول على التفاصيل.
-  </p>
-
-  <div class="tekce-premium-features">
-   <span>🇹🇷 تركيا</span>
-   <span>🇪🇸 إسبانيا</span>
-   <span>🌍 شمال قبرص</span>
-   <span>🇦🇪 الإمارات</span>
-  </div>
-
-  <a
-   class="tekce-premium-button"
-   href="https://tekce.com/?utm_source=taff&utm_medium=HL6D84C797"
-   target="_blank"
-   rel="sponsored noopener noreferrer">
-   اكتشف العقارات الآن ←
-  </a>
-
-  <p class="tekce-premium-note">
-   سيتم توجيهك إلى موقع TEKCE عبر رابط الإحالة الخاص بـ WASLA GLOBAL.
-  </p>
-
-  <!-- TEKCE OFFICIAL AFFILIATE BANNER -->
-  <div class="tekce-banner" id="tekce-banner">
-   <script
-    async
-    src="https://static.tekce.com/cache/affiliate.min.js?s=300x250-1-en&code=HL6D84C797">
-   </script>
-  </div>
-
-  <a
-   class="tekce-fallback"
-   href="https://tekce.com/?utm_source=taff&utm_medium=HL6D84C797"
-   target="_blank"
-   rel="sponsored noopener noreferrer">
-   تصفح العقارات عبر TEKCE
-  </a>
-
-  <div class="affiliate-disclosure">
-   إفصاح الشراكة: قد تحصل WASLA GLOBAL على عمولة عند إتمام عملية مؤهلة عبر رابط الإحالة، وفق شروط برنامج الشراكة، دون رسوم إضافية على الزائر.
-  </div>
- </div>
-</section>
-
-<section class="why-section" id="why">
- <div class="section-label">WHY WORK WITH US</div>
- <h2>لماذا تختار WASLA GLOBAL؟</h2>
- <p class="sub">نعمل على بناء تعاون تجاري واضح ومنظم يحقق الفائدة لجميع الأطراف.</p>
- <div class="grid">
-  <div class="card">
-   <div class="icon">🔍</div>
-   <h3>وضوح وشفافية</h3>
-   <p>نوضح نطاق العمل وشروط التعاون والعمولات قبل البدء.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🌐</div>
-   <h3>علاقات دولية</h3>
-   <p>نسعى إلى ربط الشركات والعملاء بفرص في أسواق متعددة.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🤝</div>
-   <h3>تعاون مرن</h3>
-   <p>نرحب بالتعاون مع الشركات والمسوقين والشركاء التجاريين.</p>
-  </div>
-  <div class="card">
-   <div class="icon">📋</div>
-   <h3>اتفاق واضح</h3>
-   <p>نحرص على توثيق تفاصيل الخدمة والعمولة وطريقة الدفع كتابةً.</p>
-  </div>
- </div>
+<h2>خدماتنا</h2>
+<p class="sub">نساعدك على الوصول إلى العملاء والفرص التجارية المناسبة.</p>
+<div class="grid">
+<div class="card">
+<div class="icon">📢</div>
+<h3>التسويق الرقمي</h3>
+<p>الترويج للمنتجات والخدمات والوصول إلى العملاء المحتملين.</p>
+</div>
+<div class="card">
+<div class="icon">🏢</div>
+<h3>وساطة الأعمال</h3>
+<p>ربط الشركات وأصحاب الأعمال بالعملاء والشركاء المناسبين.</p>
+</div>
+<div class="card">
+<div class="icon">🎯</div>
+<h3>جلب العملاء</h3>
+<p>البحث عن عملاء وفرص جديدة للشركات ومقدمي الخدمات.</p>
+</div>
+<div class="card">
+<div class="icon">🚗</div>
+<h3>السيارات والعقارات</h3>
+<p>ربط المهتمين بالبائعين ومقدمي العروض والفرص المتاحة.</p>
+</div>
+<div class="card">
+<div class="icon">🛍️</div>
+<h3>التجارة والخدمات</h3>
+<p>تسهيل التواصل التجاري بين الموردين والعملاء.</p>
+</div>
+<div class="card">
+<div class="icon">🌐</div>
+<h3>الشراكات العالمية</h3>
+<p>فتح قنوات تعاون بين الشركات في مختلف الدول.</p>
+</div>
+</div>
 </section>
 
 <section class="dark" id="work">
- <div class="section-label">HOW WE WORK</div>
- <h2>كيف نعمل؟</h2>
- <p>نعتمد على التعاون والاتفاق الواضح قبل بدء أي عمل.</p>
- <div class="steps">
-  <div><strong>1. استقبال الطلب:</strong> نتعرف على احتياجات الشركة أو العميل.</div>
-  <div><strong>2. الاتفاق:</strong> نحدد الخدمة والسعر والعمولة وطريقة الدفع كتابةً قبل التنفيذ.</div>
-  <div><strong>3. البحث والتسويق:</strong> نبحث عن العملاء أو الشركاء المناسبين.</div>
-  <div><strong>4. الربط:</strong> نربط الأطراف ونتابع التواصل لإتمام الاتفاق.</div>
-  <div><strong>5. العمولة:</strong> تُدفع العمولة وفق الشروط المتفق عليها وبعد تحقق الاستحقاق.</div>
- </div>
+<h2>كيف نعمل؟</h2>
+<p>نعتمد على التعاون والاتفاق الواضح قبل بدء أي عمل.</p>
+<div class="steps">
+<div><strong>1. استقبال الطلب:</strong> نتعرف على احتياجات الشركة أو العميل.</div>
+<div><strong>2. الاتفاق:</strong> نحدد الخدمة والسعر والعمولة كتابةً قبل التنفيذ.</div>
+<div><strong>3. البحث والتسويق:</strong> نبحث عن العملاء أو الشركاء المناسبين.</div>
+<div><strong>4. الربط:</strong> نربط الأطراف ونتابع التواصل لإتمام الاتفاق.</div>
+<div><strong>5. العمولة:</strong> تُدفع العمولة وفق الشروط المتفق عليها وبعد تحقق الاستحقاق.</div>
+</div>
 </section>
 
 <section id="partners">
- <div class="section-label">OUR PARTNERS NETWORK</div>
- <h2>انضم إلى شبكة شركائنا</h2>
- <p class="sub">نرحب بالتعاون مع الأفراد والشركات وأصحاب الخدمات من مختلف الدول.</p>
- <div class="grid">
-  <div class="card">
-   <div class="icon">🏢</div>
-   <h3>أصحاب الشركات</h3>
-   <p>اعرضوا خدماتكم وابحثوا عن عملاء وأسواق جديدة.</p>
-  </div>
-  <div class="card">
-   <div class="icon">👨‍💼</div>
-   <h3>المسوقون</h3>
-   <p>ساهموا في جلب العملاء مقابل عمولات يتم الاتفاق عليها مسبقاً.</p>
-  </div>
-  <div class="card">
-   <div class="icon">🤝</div>
-   <h3>الشركاء التجاريون</h3>
-   <p>شاركوا فرص الأعمال وابنوا علاقات تعاون جديدة.</p>
-  </div>
- </div>
- <a class="btn" href="#request">سجّل اهتمامك الآن</a>
+<h2>انضم إلى شبكة شركائنا</h2>
+<p class="sub">نرحب بالتعاون مع الأفراد والشركات وأصحاب الخدمات.</p>
+<div class="grid">
+<div class="card">
+<div class="icon">🏢</div>
+<h3>أصحاب الشركات</h3>
+<p>اعرضوا خدماتكم وابحثوا عن عملاء وأسواق جديدة.</p>
+</div>
+<div class="card">
+<div class="icon">👨‍💼</div>
+<h3>المسوقون</h3>
+<p>ساهموا في جلب العملاء مقابل عمولات متفق عليها مسبقاً.</p>
+</div>
+<div class="card">
+<div class="icon">🤝</div>
+<h3>الشركاء التجاريون</h3>
+<p>شاركوا فرص الأعمال وابنوا علاقات تعاون جديدة.</p>
+</div>
+</div>
+<a class="btn" href="#request">سجّل اهتمامك الآن</a>
 </section>
 
 <section id="request">
- <div class="section-label">CONTACT & COOPERATION</div>
- <h2>نموذج طلبات العملاء والشركاء</h2>
- <p class="sub">أرسل لنا معلوماتك وطلبك، وسنتواصل معك لمناقشة فرص التعاون.</p>
+<h2>نموذج طلبات العملاء والشركاء</h2>
+<p class="sub">
+أرسل لنا معلوماتك وطلبك، وسنتواصل معك لمناقشة فرص التعاون.
+</p>
 
- <form id="requestForm">
-  <label for="name">الاسم الكامل *</label>
-  <input id="name" name="name" required maxlength="100" autocomplete="name" placeholder="اكتب اسمك الكامل">
+<form id="requestForm">
 
-  <label for="company">اسم الشركة (إن وجد)</label>
-  <input id="company" name="company" maxlength="120" autocomplete="organization" placeholder="اسم الشركة أو المؤسسة">
+<label for="name">الاسم الكامل *</label>
+<input id="name" required maxlength="100" placeholder="اكتب اسمك الكامل">
 
-  <label for="email">البريد الإلكتروني *</label>
-  <input id="email" name="email" type="email" required maxlength="150" autocomplete="email" placeholder="example@email.com">
+<label for="company">اسم الشركة (إن وجد)</label>
+<input id="company" maxlength="120" placeholder="اسم الشركة أو المؤسسة">
 
-  <label for="phone">رقم واتساب للتواصل *</label>
-  <input id="phone" name="phone" type="tel" required maxlength="30" autocomplete="tel" placeholder="مع مفتاح الدولة">
+<label for="email">البريد الإلكتروني *</label>
+<input id="email" type="email" required maxlength="150" placeholder="example@email.com">
 
-  <label for="country">الدولة *</label>
-  <input id="country" name="country" required maxlength="80" autocomplete="country-name" placeholder="بلد الإقامة أو العمل">
+<label for="phone">رقم واتساب للتواصل *</label>
+<input id="phone" type="tel" required maxlength="30" placeholder="مع مفتاح الدولة">
 
-  <label for="type">نوع الطلب *</label>
-  <select id="type" name="type" required>
-   <option value="">اختر نوع الطلب</option>
-   <option>أرغب في تسويق منتج أو خدمة</option>
-   <option>أبحث عن عملاء لشركتي</option>
-   <option>أرغب في الانضمام كمسوق</option>
-   <option>أرغب في الانضمام كشريك تجاري</option>
-   <option>لدي فرصة وساطة أو صفقة تجارية</option>
-   <option>أبحث عن منتج أو خدمة</option>
-   <option>استفسار عام</option>
-  </select>
+<label for="country">الدولة *</label>
+<input id="country" required maxlength="80" placeholder="بلد الإقامة أو العمل">
 
-  <label for="field">مجال العمل أو الخدمة</label>
-  <input id="field" name="field" maxlength="150" placeholder="مثلاً: عقارات، سيارات، تجارة، تسويق">
+<label for="type">نوع الطلب *</label>
+<select id="type" required>
+<option value="">اختر نوع الطلب</option>
+<option>أرغب في تسويق منتج أو خدمة</option>
+<option>أبحث عن عملاء لشركتي</option>
+<option>أرغب في الانضمام كمسوق</option>
+<option>أرغب في الانضمام كشريك تجاري</option>
+<option>لدي فرصة وساطة أو صفقة تجارية</option>
+<option>أبحث عن منتج أو خدمة</option>
+<option>استفسار عام</option>
+</select>
 
-  <label for="details">تفاصيل الطلب *</label>
-  <textarea id="details" name="details" required maxlength="2000" placeholder="اشرح لنا طلبك أو الفرصة التي تريد التعاون بشأنها"></textarea>
+<label for="field">مجال العمل أو الخدمة</label>
+<input id="field" maxlength="150" placeholder="مثلاً: عقارات، سيارات، تجارة، تسويق">
 
-  <button class="btn" type="submit">إرسال الطلب عبر واتساب</button>
- </form>
+<label for="details">تفاصيل الطلب *</label>
+<textarea id="details" required maxlength="2000" placeholder="اشرح لنا طلبك أو الفرصة التي تريد التعاون بشأنها"></textarea>
 
- <p class="notice">
-  عند الضغط على الإرسال، سيتم فتح واتساب برسالة جاهزة تحتوي على معلومات طلبك.
-  لن يتم إرسال الرسالة إلا بعد مراجعتها والضغط على زر الإرسال داخل واتساب.
- </p>
+<button class="btn" type="submit">إرسال الطلب عبر واتساب</button>
+</form>
+
+<p class="notice">
+عند الضغط على الإرسال، سيتم فتح واتساب برسالة جاهزة تحتوي على معلومات طلبك.
+لن يتم إرسال الرسالة إلا بعد مراجعتها والضغط على زر الإرسال داخل واتساب.
+</p>
 </section>
 
 <section id="terms">
- <div class="section-label">TERMS OF COOPERATION</div>
- <h2>شروط التعاون والعمولات</h2>
- <div class="policy">
-  <p>1. يتم تحديد طبيعة الخدمة ونطاق العمل قبل بدء أي تعاون.</p>
-  <p>2. يتم الاتفاق كتابةً على السعر والعمولة وطريقة الدفع وموعد الاستحقاق.</p>
-  <p>3. لا تُضمن أي مبيعات أو أرباح أو نتائج تجارية.</p>
-  <p>4. لا تستحق أي عمولة إلا وفق الشروط التي وافق عليها الأطراف مسبقاً.</p>
-  <p>5. يجب على جميع الأطراف تقديم معلومات صحيحة والالتزام بالقوانين المعمول بها.</p>
-  <p>6. لا تمثل WASLA GLOBAL أي طرف قانونياً أو مالياً إلا بموجب تفويض واتفاق واضح.</p>
-  <p>7. لا تُعد WASLA GLOBAL طرفاً في بيع أو شراء المنتجات أو العقارات إلا إذا تم الاتفاق على ذلك كتابةً.</p>
- </div>
+<h2>شروط التعاون والعمولات</h2>
+<div class="policy">
+<p>1. يتم تحديد طبيعة الخدمة ونطاق العمل قبل بدء أي تعاون.</p>
+<p>2. يتم الاتفاق كتابةً على السعر والعمولة وطريقة الدفع وموعد الاستحقاق.</p>
+<p>3. لا تُضمن أي مبيعات أو أرباح أو نتائج تجارية.</p>
+<p>4. لا تستحق أي عمولة إلا وفق الشروط التي وافق عليها الأطراف مسبقاً.</p>
+<p>5. يجب على جميع الأطراف تقديم معلومات صحيحة والالتزام بالقوانين المعمول بها.</p>
+<p>6. لا تمثل WASLA GLOBAL أي طرف قانونياً أو مالياً إلا بموجب تفويض واتفاق واضح.</p>
+</div>
 </section>
 
 <section id="privacy">
- <div class="section-label">PRIVACY POLICY</div>
- <h2>الخصوصية</h2>
- <div class="policy">
-  <p>تُستخدم المعلومات التي تدخلها في نموذج التواصل لغرض الرد على استفسارك ومناقشة فرص التعاون.</p>
-  <p>عند الإرسال عبر واتساب، تنتقل المعلومات إلى تطبيق واتساب وفق إعداداتك وسياسة الخصوصية الخاصة به.</p>
-  <p>لا تدخل كلمات مرور أو بيانات بطاقات بنكية أو معلومات شخصية شديدة الحساسية في نموذج التواصل.</p>
-  <p>لا نطلب منك دفع رسوم لمجرد إرسال طلب التواصل عبر هذا الموقع.</p>
- </div>
+<h2>الخصوصية</h2>
+<div class="policy">
+<p>
+تُستخدم المعلومات التي تدخلها في نموذج التواصل لغرض الرد على استفسارك
+ومناقشة فرص التعاون. عند الإرسال عبر واتساب، تنتقل المعلومات إلى تطبيق
+واتساب وفق إعداداتك وسياسة الخصوصية الخاصة به.
+</p>
+<p>
+لا تدخل كلمات مرور أو بيانات بطاقات بنكية أو معلومات شخصية شديدة الحساسية
+في نموذج التواصل.
+</p>
+</div>
 </section>
 
 <section id="contact">
- <div class="section-label">GET IN TOUCH</div>
- <h2>تواصل معنا</h2>
- <p class="sub">يسعدنا استقبال استفساراتكم وفرص التعاون والشراكات الجديدة.</p>
- <div class="card contact-card contact-links">
-  <h3>WASLA GLOBAL</h3>
-  <p>International Business & Marketing Network</p>
-  <p>البريد الإلكتروني:</p>
-  <p><a href="mailto:Wrdmnswr4@gmail.com">Wrdmnswr4@gmail.com</a></p>
-  <a class="btn" href="https://wa.me/972568311495" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب</a>
-  <a class="btn white" href="mailto:Wrdmnswr4@gmail.com">راسلنا بالبريد الإلكتروني</a>
- </div>
+<h2>تواصل معنا</h2>
+<p class="sub">يسعدنا استقبال استفساراتكم وفرص التعاون.</p>
+<div class="card contact-links">
+<h3>WASLA GLOBAL</h3>
+<p>International Business & Marketing Network</p>
+<p>البريد الإلكتروني:
+<a href="mailto:Wrdmnswr4@gmail.com">Wrdmnswr4@gmail.com</a></p>
+<a class="btn" href="https://wa.me/972568311495" target="_blank" rel="noopener">تواصل عبر واتساب</a>
+<a class="btn white" href="mailto:Wrdmnswr4@gmail.com">راسلنا بالبريد الإلكتروني</a>
+</div>
 </section>
 
-</main>
-
 <footer>
- <h3>WASLA GLOBAL | وصلة العالمية</h3>
- <p>نربط الأعمال بالفرص حول العالم.</p>
- <div class="footer-links">
-  <a href="#terms">شروط التعاون</a>
-  <a href="#privacy">الخصوصية</a>
-  <a href="#contact">اتصل بنا</a>
- </div>
- <p>© 2026 WASLA GLOBAL. جميع الحقوق محفوظة.</p>
+<h3>WASLA GLOBAL | وصلة العالمية</h3>
+<p>نربط الأعمال بالفرص حول العالم.</p>
+<p>
+<a href="#terms">شروط التعاون</a> |
+<a href="#privacy">الخصوصية</a> |
+<a href="#contact">اتصل بنا</a>
+</p>
+<p>© 2026 WASLA GLOBAL. جميع الحقوق محفوظة.</p>
 </footer>
 
 <a class="whatsapp-button"
- href="https://wa.me/972568311495"
- target="_blank"
- rel="noopener noreferrer"
- aria-label="تواصل معنا عبر واتساب">💬 تواصل معنا</a>
+href="https://wa.me/972568311495"
+target="_blank" rel="noopener"
+aria-label="تواصل معنا عبر واتساب">
+💬 تواصل معنا
+</a>
 
 <script>
 const form = document.getElementById("requestForm");
 
 form.addEventListener("submit", function(event) {
  event.preventDefault();
-
- if (!form.reportValidity()) return;
 
  const name = document.getElementById("name").value.trim();
  const company = document.getElementById("company").value.trim();
