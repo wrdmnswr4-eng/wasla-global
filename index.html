@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -365,6 +366,54 @@ footer a:hover{text-decoration:underline}
  box-shadow:0 4px 12px #0003;
 }
 .whatsapp-button:hover{transform:translateY(-3px)}
+
+/* BUYER REQUEST SECTION */
+.buyer-section{
+ background:linear-gradient(180deg,#f5f7fa,#ffffff);
+}
+.buyer-box{
+ max-width:850px;
+ margin:25px auto 0;
+ padding:35px 25px;
+ background:linear-gradient(145deg,#101d35,#173653);
+ border:1px solid var(--gold2);
+ border-radius:18px;
+ box-shadow:0 12px 35px #10213e20;
+}
+.buyer-box h2{color:white}
+.buyer-box .buyer-intro{
+ color:#e1e8f0;
+ max-width:680px;
+ margin:10px auto 20px;
+}
+.buyer-box .buyer-highlight{
+ color:var(--gold);
+ font-weight:bold;
+}
+.buyer-form{
+ background:white;
+}
+.buyer-consent{
+ display:flex;
+ align-items:flex-start;
+ gap:10px;
+ margin:18px 0;
+ font-size:13px;
+ font-weight:normal;
+ line-height:1.7;
+}
+.buyer-consent input{
+ width:19px;
+ min-width:19px;
+ height:19px;
+ margin:3px 0 0;
+}
+.buyer-note{
+ color:#e1e8f0;
+ font-size:12px;
+ max-width:680px;
+ margin:15px auto 0;
+}
 @media(max-width:700px){
  header{justify-content:center;padding:12px 4%}
  .logo{width:100%;text-align:center}
@@ -379,6 +428,7 @@ footer a:hover{text-decoration:underline}
  .tekce-premium-box{padding:32px 17px}
  .tekce-premium h2{font-size:25px}
  form{padding:20px}
+ .buyer-box{padding:25px 14px}
  .whatsapp-button{bottom:13px;left:12px;font-size:13px}
 }
 </style>
@@ -393,6 +443,7 @@ footer a:hover{text-decoration:underline}
   <a href="#about">من نحن</a>
   <a href="#services">خدماتنا</a>
   <a href="#tekce">العقارات</a>
+  <a href="#buyer-request">اطلب عقارك</a>
   <a href="#why">لماذا نحن؟</a>
   <a href="#work">آلية العمل</a>
   <a href="#partners">الشركاء</a>
@@ -506,7 +557,6 @@ footer a:hover{text-decoration:underline}
    سيتم توجيهك إلى موقع TEKCE عبر رابط الإحالة الخاص بـ WASLA GLOBAL.
   </p>
 
-  <!-- TEKCE OFFICIAL AFFILIATE BANNER -->
   <div class="tekce-banner" id="tekce-banner">
    <script
     async
@@ -525,6 +575,137 @@ footer a:hover{text-decoration:underline}
   <div class="affiliate-disclosure">
    إفصاح الشراكة: قد تحصل WASLA GLOBAL على عمولة عند إتمام عملية مؤهلة عبر رابط الإحالة، وفق شروط برنامج الشراكة، دون رسوم إضافية على الزائر.
   </div>
+ </div>
+</section>
+
+<!-- DUBAI BUYER REQUEST -->
+<section class="buyer-section" id="buyer-request">
+ <div class="section-label">FIND YOUR PROPERTY IN DUBAI</div>
+
+ <div class="buyer-box">
+  <div class="tekce-premium-label">WASLA GLOBAL × TEKCE</div>
+  <h2>ابحث عن عقارك في دبي</h2>
+
+  <p class="buyer-intro">
+   هل تبحث عن شقة أو فيلا في دبي؟
+   أخبرنا بمواصفات العقار والميزانية المناسبة لك،
+   وسنعمل على توجيه طلبك لمراجعته والبحث عن الخيارات المناسبة.
+  </p>
+
+  <p class="buyer-highlight">أرسل طلبك مجاناً دون أي التزام بالشراء.</p>
+
+  <form id="buyerForm" class="buyer-form">
+
+   <label for="buyerName">الاسم الكامل *</label>
+   <input
+    id="buyerName"
+    name="buyerName"
+    required
+    maxlength="100"
+    autocomplete="name"
+    placeholder="اكتب اسمك الكامل">
+
+   <label for="buyerPhone">رقم واتساب مع مفتاح الدولة *</label>
+   <input
+    id="buyerPhone"
+    name="buyerPhone"
+    type="tel"
+    required
+    maxlength="30"
+    autocomplete="tel"
+    placeholder="مثال: +966xxxxxxxxx">
+
+   <label for="buyerCountry">بلد الإقامة *</label>
+   <input
+    id="buyerCountry"
+    name="buyerCountry"
+    required
+    maxlength="80"
+    placeholder="في أي دولة تقيم؟">
+
+   <label for="buyerEmail">البريد الإلكتروني (اختياري)</label>
+   <input
+    id="buyerEmail"
+    name="buyerEmail"
+    type="email"
+    maxlength="150"
+    autocomplete="email"
+    placeholder="example@email.com">
+
+   <label for="propertyType">ما نوع العقار الذي تبحث عنه؟ *</label>
+   <select id="propertyType" name="propertyType" required>
+    <option value="">اختر نوع العقار</option>
+    <option>شقة</option>
+    <option>فيلا</option>
+    <option>تاون هاوس</option>
+    <option>أرض</option>
+    <option>عقار تجاري</option>
+    <option>ما زلت أدرس الخيارات</option>
+   </select>
+
+   <label for="buyerBudget">الميزانية التقريبية بالدرهم الإماراتي *</label>
+   <select id="buyerBudget" name="buyerBudget" required>
+    <option value="">اختر الميزانية</option>
+    <option>أقل من 500,000 درهم</option>
+    <option>500,000 - 1,000,000 درهم</option>
+    <option>1,000,000 - 2,000,000 درهم</option>
+    <option>2,000,000 - 3,000,000 درهم</option>
+    <option>3,000,000 - 5,000,000 درهم</option>
+    <option>أكثر من 5,000,000 درهم</option>
+    <option>لم أحدد الميزانية بعد</option>
+   </select>
+
+   <label for="buyerPurpose">ما الغرض من شراء العقار؟ *</label>
+   <select id="buyerPurpose" name="buyerPurpose" required>
+    <option value="">اختر الغرض</option>
+    <option>السكن الشخصي</option>
+    <option>الاستثمار والتأجير</option>
+    <option>إعادة البيع</option>
+    <option>ما زلت أدرس الخيارات</option>
+   </select>
+
+   <label for="buyerArea">المنطقة المفضلة في دبي</label>
+   <input
+    id="buyerArea"
+    name="buyerArea"
+    maxlength="150"
+    placeholder="مثلاً: دبي مارينا، داون تاون، أو لا توجد منطقة محددة">
+
+   <label for="buyerTimeline">متى تخطط للشراء؟ *</label>
+   <select id="buyerTimeline" name="buyerTimeline" required>
+    <option value="">اختر الفترة</option>
+    <option>في أقرب وقت</option>
+    <option>خلال شهر</option>
+    <option>خلال 3 أشهر</option>
+    <option>خلال 6 أشهر</option>
+    <option>بعد 6 أشهر</option>
+    <option>أبحث حالياً فقط</option>
+   </select>
+
+   <label for="buyerDetails">مواصفات أو تفاصيل إضافية</label>
+   <textarea
+    id="buyerDetails"
+    name="buyerDetails"
+    maxlength="1500"
+    placeholder="عدد غرف النوم، عقار جاهز أو على المخطط، وأي متطلبات أخرى..."></textarea>
+
+   <label class="buyer-consent">
+    <input type="checkbox" id="buyerConsent" required>
+    <span>
+     أوافق على تواصل WASLA GLOBAL معي بخصوص طلبي،
+     وعلى مشاركة بيانات الطلب مع TEKCE عند الحاجة لمتابعة الخيارات العقارية.
+    </span>
+   </label>
+
+   <button class="btn" type="submit">إرسال طلب العقار عبر واتساب</button>
+
+  </form>
+
+  <p class="buyer-note">
+   ملاحظة: عند الضغط على الزر ستفتح رسالة جاهزة في واتساب.
+   لن يتم إرسال معلوماتك إلا بعد مراجعة الرسالة والضغط على إرسال داخل واتساب.
+   إرسال الطلب لا يعني حجز عقار أو ضمان توفره أو الالتزام بالشراء.
+  </p>
  </div>
 </section>
 
@@ -700,6 +881,7 @@ footer a:hover{text-decoration:underline}
  aria-label="تواصل معنا عبر واتساب">💬 تواصل معنا</a>
 
 <script>
+/* GENERAL CONTACT FORM */
 const form = document.getElementById("requestForm");
 
 form.addEventListener("submit", function(event) {
@@ -732,7 +914,47 @@ form.addEventListener("submit", function(event) {
 
  window.open(whatsappURL, "_blank");
 });
+
+/* DUBAI PROPERTY BUYER FORM */
+const buyerForm = document.getElementById("buyerForm");
+
+buyerForm.addEventListener("submit", function(event) {
+ event.preventDefault();
+
+ if (!buyerForm.reportValidity()) return;
+
+ const buyerName = document.getElementById("buyerName").value.trim();
+ const buyerPhone = document.getElementById("buyerPhone").value.trim();
+ const buyerCountry = document.getElementById("buyerCountry").value.trim();
+ const buyerEmail = document.getElementById("buyerEmail").value.trim();
+ const propertyType = document.getElementById("propertyType").value;
+ const buyerBudget = document.getElementById("buyerBudget").value;
+ const buyerPurpose = document.getElementById("buyerPurpose").value;
+ const buyerArea = document.getElementById("buyerArea").value.trim();
+ const buyerTimeline = document.getElementById("buyerTimeline").value;
+ const buyerDetails = document.getElementById("buyerDetails").value.trim();
+
+ const message =
+ "طلب مشتري عقار جديد - WASLA GLOBAL\n" +
+ "طلب عقار في دبي\n\n" +
+ "الاسم: " + buyerName + "\n" +
+ "رقم واتساب العميل: " + buyerPhone + "\n" +
+ "بلد الإقامة: " + buyerCountry + "\n" +
+ "البريد الإلكتروني: " + (buyerEmail || "غير محدد") + "\n" +
+ "نوع العقار: " + propertyType + "\n" +
+ "الميزانية: " + buyerBudget + "\n" +
+ "الغرض من الشراء: " + buyerPurpose + "\n" +
+ "المنطقة المفضلة: " + (buyerArea || "غير محددة") + "\n" +
+ "موعد الشراء: " + buyerTimeline + "\n" +
+ "تفاصيل إضافية: " + (buyerDetails || "لا يوجد") + "\n\n" +
+ "موافقة العميل على التواصل ومشاركة بيانات الطلب مع TEKCE: نعم";
+
+ const whatsappURL =
+ "https://wa.me/972568311495?text=" + encodeURIComponent(message);
+
+ window.location.href = whatsappURL;
+});
 </script>
 
 </body>
- </html>
+</html>
